@@ -1,16 +1,18 @@
 import FetchApi from './api/fetchApi';
 import UseRefHook from './hooks/useRefHook';
-import { Provider } from 'react-redux';
-import configureStore from './reduxToolkit/store'
-import CustomerCard from './reduxToolkit/component';
+import { Provider, useSelector } from 'react-redux';
 import UseMemoHook from './hooks/useMemo';
+import MyReduxComponent from './reduxToolkit/reduxToolkitExample';
+import UseEffectHook from './hooks/useEffectHook';
+import UseCallbackHook from './hooks/useCallback';
 
 
 function App() {
   return (
-    <div className="App">
-       <UseMemoHook/>
-    </div>
+      <div className="App">
+        <h1>Hi</h1>
+        <UseCallbackHook/>
+      </div>
   );
 }
 
